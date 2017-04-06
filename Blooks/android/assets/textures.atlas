@@ -1,0 +1,394 @@
+
+textures.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gfx/1
+  rotate: false
+  xy: 1753, 1822
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/2
+  rotate: false
+  xy: 1700, 1604
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/3
+  rotate: false
+  xy: 1788, 1390
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/4
+  rotate: false
+  xy: 1788, 1176
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/5
+  rotate: false
+  xy: 1788, 962
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/6
+  rotate: false
+  xy: 1788, 748
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/7
+  rotate: false
+  xy: 1788, 534
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/8
+  rotate: false
+  xy: 1788, 320
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/9
+  rotate: false
+  xy: 1788, 106
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 1
+  rotate: false
+  xy: 1084, 1153
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 2
+  rotate: false
+  xy: 1084, 792
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 3
+  rotate: false
+  xy: 1084, 431
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 4
+  rotate: false
+  xy: 1084, 70
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 5
+  rotate: false
+  xy: 1436, 1153
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 6
+  rotate: false
+  xy: 1436, 792
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 7
+  rotate: false
+  xy: 1436, 431
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 8
+  rotate: false
+  xy: 1436, 70
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/SnR1Mdp
+  rotate: false
+  xy: 1084, 1818
+  size: 667, 216
+  orig: 667, 216
+  offset: 0, 0
+  index: -1
+gfx/back
+  rotate: false
+  xy: 478, 32
+  size: 112, 80
+  orig: 112, 80
+  offset: 0, 0
+  index: -1
+gfx/background
+  rotate: false
+  xy: 2, 114
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+gfx/botonplay
+  rotate: false
+  xy: 1084, 1666
+  size: 614, 150
+  orig: 614, 150
+  offset: 0, 0
+  index: -1
+gfx/botonremove
+  rotate: false
+  xy: 1084, 1514
+  size: 614, 150
+  orig: 614, 150
+  offset: 0, 0
+  index: -1
+gfx/rate
+  rotate: false
+  xy: 1914, 1691
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+gfx/restart
+  rotate: false
+  xy: 145, 13
+  size: 115, 99
+  orig: 115, 99
+  offset: 0, 0
+  index: -1
+gfx/share
+  rotate: false
+  xy: 262, 11
+  size: 104, 101
+  orig: 104, 101
+  offset: 0, 0
+  index: -1
+gfx/soundoff
+  rotate: false
+  xy: 1967, 1924
+  size: 79, 110
+  orig: 79, 110
+  offset: 0, 0
+  index: -1
+gfx/soundon
+  rotate: false
+  xy: 2, 2
+  size: 141, 110
+  orig: 141, 110
+  offset: 0, 0
+  index: -1
+gfx/undo
+  rotate: false
+  xy: 368, 18
+  size: 108, 94
+  orig: 108, 94
+  offset: 0, 0
+  index: -1
+
+textures2.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gfx/nivel 1
+  rotate: false
+  xy: 2, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 2
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 3
+  rotate: false
+  xy: 1004, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 4
+  rotate: false
+  xy: 1004, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+
+textures3.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gfx/nivel 5
+  rotate: false
+  xy: 2, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 13
+  rotate: false
+  xy: 2, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 6
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 7
+  rotate: false
+  xy: 1004, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 8
+  rotate: false
+  xy: 1004, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+
+textures4.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gfx/nivel 10
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 11
+  rotate: false
+  xy: 1004, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 12
+  rotate: false
+  xy: 1004, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 9
+  rotate: false
+  xy: 2, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+
+textures5.png
+size: 2048,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gfx/10
+  rotate: false
+  xy: 706, 149
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/11
+  rotate: false
+  xy: 920, 149
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/12
+  rotate: false
+  xy: 1134, 292
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/13
+  rotate: false
+  xy: 1348, 292
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/14
+  rotate: false
+  xy: 1562, 292
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/15
+  rotate: false
+  xy: 1776, 292
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/16
+  rotate: false
+  xy: 1134, 78
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 10
+  rotate: false
+  xy: 354, 2
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 9
+  rotate: false
+  xy: 2, 2
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/banner
+  rotate: false
+  xy: 2, 363
+  size: 1080, 141
+  orig: 1080, 141
+  offset: 0, 0
+  index: -1
+gfx/candado
+  rotate: false
+  xy: 1348, 78
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
