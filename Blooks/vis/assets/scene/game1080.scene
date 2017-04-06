@@ -786,6 +786,12 @@
               "value": "0",
               "@class-key": "String",
               "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "90",
+              "@class-key": "String",
+              "@class-value": "String"
             }
           ],
           "@class": "Variables"
@@ -860,6 +866,12 @@
               "value": "0",
               "@class-key": "String",
               "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
             }
           ],
           "@class": "Variables"
@@ -870,8 +882,8 @@
     {
       "components": [
         {
-          "x": 15.2312,
-          "y": 7.5774,
+          "x": 15.2035,
+          "y": 7.5219,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 90.0,
@@ -934,6 +946,12 @@
               "value": "0",
               "@class-key": "String",
               "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "90",
+              "@class-key": "String",
+              "@class-value": "String"
             }
           ],
           "@class": "Variables"
@@ -948,7 +966,7 @@
           "y": 11.8821,
           "scaleX": 1.0,
           "scaleY": 1.0,
-          "rotation": 270.0,
+          "rotation": -90.0,
           "@class": "Transform"
         },
         {
@@ -1006,6 +1024,12 @@
             {
               "key": "selected",
               "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "-90",
               "@class-key": "String",
               "@class-value": "String"
             }
@@ -1079,6 +1103,12 @@
             },
             {
               "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
               "value": "0",
               "@class-key": "String",
               "@class-value": "String"
@@ -1156,6 +1186,12 @@
               "value": "0",
               "@class-key": "String",
               "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "180",
+              "@class-key": "String",
+              "@class-value": "String"
             }
           ],
           "@class": "Variables"
@@ -1167,7 +1203,7 @@
       "components": [
         {
           "x": 15.1437,
-          "y": 3.3781,
+          "y": 3.3226,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
@@ -1227,6 +1263,12 @@
             },
             {
               "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
               "value": "0",
               "@class-key": "String",
               "@class-value": "String"

@@ -480,6 +480,12 @@
         {
           "variables": [
             {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
               "key": "selected",
               "value": "0",
               "@class-key": "String",
@@ -547,6 +553,12 @@
         },
         {
           "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
             {
               "key": "selected",
               "value": "0",
@@ -616,6 +628,12 @@
         {
           "variables": [
             {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
               "key": "selected",
               "value": "0",
               "@class-key": "String",
@@ -684,6 +702,12 @@
         {
           "variables": [
             {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
               "key": "selected",
               "value": "0",
               "@class-key": "String",
@@ -748,6 +772,29 @@
         {
           "id": "p6",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "90",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -805,6 +852,29 @@
         {
           "id": "p5",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -812,8 +882,8 @@
     {
       "components": [
         {
-          "x": 15.2312,
-          "y": 7.5774,
+          "x": 15.2035,
+          "y": 7.5219,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 90.0,
@@ -862,6 +932,29 @@
         {
           "id": "p2",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "90",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -919,6 +1012,29 @@
         {
           "id": "p4",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "270",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -976,6 +1092,29 @@
         {
           "id": "p1",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -1033,6 +1172,29 @@
         {
           "id": "p7",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "180",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -1041,7 +1203,7 @@
       "components": [
         {
           "x": 15.1437,
-          "y": 3.3781,
+          "y": 3.3226,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
@@ -1090,6 +1252,29 @@
         {
           "id": "p3",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "rotation",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -1388,6 +1573,80 @@
         {
           "id": "soundOff",
           "@class": "VisID"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 19.9393,
+          "y": 3.3482,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 1.75,
+          "originY": 1.795,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "relativePath": "gfx/Cuadrado 1.png",
+            "@class": "TextureRegionAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "flipX": false,
+          "flipY": false,
+          "width": 3.5,
+          "height": 3.59,
+          "@class": "ProtoVisSprite"
+        },
+        {
+          "layerId": 0,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "db9518ae-cdd0-4aba-8488-5db2f50c68fe",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 0,
+          "@class": "Renderable"
+        },
+        {
+          "id": "aux",
+          "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "visibility",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            },
+            {
+              "key": "selected",
+              "value": "0",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"

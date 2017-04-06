@@ -15,6 +15,7 @@ import com.kotcrab.vis.runtime.scene.SceneLoader;
 import com.kotcrab.vis.runtime.scene.SystemProvider;
 import com.kotcrab.vis.runtime.scene.VisAssetManager;
 import com.kotcrab.vis.runtime.util.EntityEngineConfiguration;
+import com.kotcrab.vis.runtime.util.SpriterData;
 import com.plipapps.blooks.manager.GameSceneManager;
 import com.plipapps.blooks.manager.LevelSceneManager;
 import com.plipapps.blooks.manager.MenuSceneManager;
@@ -112,6 +113,7 @@ public class Blooks extends ApplicationAdapter {
 			}
 		});
 
+		//manager.load("spriter/Animacion/Animacion.scml", SpriterData.class);
 		scenePath = "scene/game1080.scene";
 		scene = manager.loadSceneNow(scenePath, parameter);
 	}

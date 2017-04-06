@@ -3,13 +3,18 @@ package com.plipapps.blooks.system;
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;
 import com.artemis.Entity;
+import com.artemis.EntityEdit;
 import com.artemis.systems.EntityProcessingSystem;
+import com.kotcrab.vis.runtime.assets.SpriterAsset;
 import com.kotcrab.vis.runtime.component.*;
+import com.kotcrab.vis.runtime.scene.VisAssetManager;
 import com.kotcrab.vis.runtime.system.VisIDManager;
 import com.kotcrab.vis.runtime.system.render.RenderBatchingSystem;
 import com.kotcrab.vis.runtime.util.AfterSceneInit;
+import com.kotcrab.vis.runtime.util.SpriterData;
 import com.plipapps.blooks.component.Cuadrado;
 import com.plipapps.blooks.component.Merge;
+import sun.audio.AudioPlayer;
 
 import java.util.ArrayList;
 
@@ -31,6 +36,7 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
     private boolean touch1, touch2;
     VisIDManager idManager;
     ArrayList<VisSprite> mergeTemplate;
+    private VisAssetManager mVisAssetManager;
 
     public SquareMergeSystem () {
         super(Aspect.all(VisSprite.class, Merge.class));
@@ -44,7 +50,7 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
             if (i <= 4) {
                 cuadrados.add(new Cuadrado(i, idManager.get("c" + i)));
             }
-            posibilidades.add(new Cuadrado(i, idManager.get("p" + i)));
+            posibilidades.add(new Cuadrado(i, idManager.get("p"+ i)));
             mergeTemplate.add(spriteCm.get(idManager.get("p" + i)));
         }
         invisible = idManager.get("aux");
@@ -59,6 +65,7 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
             if(selected == 1){
                 if(!touch1 && posicion == -1) {
                     System.out.println("posicion");
+                   // setAnimacion(cuadrados.get(i).getEntity());
                     posicion = i;
                     touch1 = true;
                 }else if (!touch2 && posicion != i){
@@ -66,19 +73,18 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
                         System.out.println("union");
                         if (cuadrados.get(posicion).getId() > cuadrados.get(i).getId()) {
                             if (cuadrados.get(posicion).getId() == 2 && cuadrados.get(i).getId() == 1) {
-                                swapSpritesPosition(cuadrados.get(posicion).getEntity(),0);
+                                swapSpritesPosition(cuadrados.get(i).getEntity(),0);
                             }else  if (cuadrados.get(posicion).getId() == 4 && cuadrados.get(i).getId() == 1) {
-                                swapSpritesPosition(cuadrados.get(posicion).getEntity(),1);
+                                swapSpritesPosition(cuadrados.get(i).getEntity(),1);
                             }else if (cuadrados.get(posicion).getId() == 3 && cuadrados.get(i).getId() == 2) {
-                                swapSpritesPosition(cuadrados.get(posicion).getEntity(),1);
+                                swapSpritesPosition(cuadrados.get(i).getEntity(),1);
                             }else if (cuadrados.get(posicion).getId() == 4 && cuadrados.get(i).getId() == 3) {
-                                swapSpritesPosition(cuadrados.get(posicion).getEntity(),0);
+                                swapSpritesPosition(cuadrados.get(i).getEntity(),0);
                             }
                         }else {
                             if (cuadrados.get(posicion).getId() == 1 && cuadrados.get(i).getId() == 2) {
                                 swapSpritesPosition(cuadrados.get(i).getEntity(),0);
                             }else  if (cuadrados.get(posicion).getId() == 1 && cuadrados.get(i).getId() == 4) {
-                                System.out.println("uno con cuatro");
                                 swapSpritesPosition(cuadrados.get(i).getEntity(),1);
                             }else if (cuadrados.get(posicion).getId() == 2 && cuadrados.get(i).getId() == 3) {
                                 swapSpritesPosition(cuadrados.get(i).getEntity(),1);
@@ -102,15 +108,25 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
         Transform transform2 = transformCm.get(entity2);
         Transform platformTransform = new Transform();
 
-        world.createEntity().edit()
+      EntityEdit e =  world.createEntity().edit()
                 .add(new Renderable(10))
                 .add(new Layer(targetLayerId))
                 .add(new VisSprite(mergeTemplate.get(i)))
                 .add(platformTransform)
                 .add(new Origin())
                 .add(new Merge());
+  
 
-        platformTransform.setPosition(transform2.getX(),transform2.getY());
+        int aux = variables.get(posibilidades.get(i).getEntity()).getInt("rotation");
+        if (aux > 0) {
+            platformTransform.setRotation(aux);
+            platformTransform.setPosition(transform2.getX()+mergeTemplate.get(0).getWidth(), transform2.getY());
+        }else if (aux < 0){
+            platformTransform.setRotation(aux);
+            platformTransform.setPosition(transform2.getX()-mergeTemplate.get(0).getWidth(), transform2.getY()+mergeTemplate.get(0).getWidth());
+        }else {
+            platformTransform.setPosition(transform2.getX(), transform2.getY());
+        }
 
         renderSystme.markDirty();
     }
@@ -123,6 +139,19 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
         float xPos = transform1.getX(), yPos = transform1.getY();
         transform2.setPosition(xPos, yPos);
         transform3.setPosition(xPos, yPos);
+    }
+    private void setAnimacion(Entity entity){
+        Transform transform2 = transformCm.get(entity);
+        SpriterData spriterData = mVisAssetManager.get("spriter/Animacion/Animacion.scml");
+        VisSpriter visSpriter = new VisSpriter(spriterData.loader, spriterData.data, transform2.getScaleX());
+        Transform platformTransform = new Transform();
+        world.createEntity().edit()
+                .add(new Renderable(10))
+                .add(new Layer(0))
+                .add(platformTransform) //this is new in 0.3.x
+                .add(new AssetReference(new SpriterAsset("spriter/Animacion/Animacion.scml", 1)))
+                .add(visSpriter);
+        platformTransform.setPosition(transform2.getX(),transform2.getY());
     }
     @Override
     protected void process(Entity e) {
