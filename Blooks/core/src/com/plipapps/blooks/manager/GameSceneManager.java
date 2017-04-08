@@ -23,6 +23,8 @@ public class GameSceneManager extends BaseSceneManager {
     private Entity soundOnEntity, soundOffEntity;
     private boolean isCuadrado;
     private Entity animacion;
+    private ArrayList<Cuadrado> compuestos;
+
     public GameSceneManager(Blooks game, int nivel) {
         super(game);
         this.nivel = nivel;
@@ -36,6 +38,9 @@ public class GameSceneManager extends BaseSceneManager {
            for (int i = 1; i <= 4; i++){
             getCuadrados().add(new Cuadrado(i, getSpriteBounds("c"+i), idManager.get("c"+i)));
         }
+        compuestos = new ArrayList<Cuadrado>();
+
+
         animacion = idManager.get("click0");
         back = getSpriteBounds("back");
         undo = getSpriteBounds("undo");
@@ -67,6 +72,21 @@ public class GameSceneManager extends BaseSceneManager {
                     // sprite = spriteCm.get(cuadrados.get(i).getEntity());
                     variables.get(cuadrados.get(i).getEntity()).putInt("selected", 1);
                     isCuadrado = true;
+                }
+            }
+        }
+        if(compuestos.size() == 0){
+            for (int j = 1; j < 3; j++) {
+                try {
+                    compuestos.add(new Cuadrado(j, getSpriteBounds("p"+j),idManager.get("p"+j)));
+                } catch (Exception e){
+                    break;
+                }
+            }
+        }else{
+            for(int j=0;j < compuestos.size(); j++){
+                if (compuestos.get(j).getBounds().contains(x, y)){
+                    System.out.println("toco2");
                 }
             }
         }

@@ -39,12 +39,14 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
     private VisAssetManager mVisAssetManager;
     private Entity animacion;
     private Transform animacionTransform;
+    private ArrayList<Cuadrado> compuestos;
 
     public SquareMergeSystem () {
         super(Aspect.all(VisSprite.class, Merge.class));
     }
     @Override
     public void afterSceneInit() {
+        compuestos = new ArrayList<Cuadrado>();
         cuadrados = new ArrayList<Cuadrado>();
         posibilidades = new ArrayList<Cuadrado>();
         mergeTemplate = new ArrayList<VisSprite>();
@@ -132,11 +134,14 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
 
       world.createEntity().edit()
                 .add(new Renderable(10))
-                .add(new Layer(targetLayerId))
+                .add(new Layer(targetLayerId = 2))
                 .add(new VisSprite(mergeTemplate.get(i)))
                 .add(platformTransform)
                 .add(new Origin())
-                .add(new Merge());
+                .add(new Merge())
+                .add(new VisID("i"+ compuestos.size()));
+
+
   
 
         int aux = variables.get(posibilidades.get(i).getEntity()).getInt("rotation");
@@ -149,6 +154,9 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
         }else {
             platformTransform.setPosition(transform2.getX(), transform2.getY());
         }
+        Entity entity = idManager.get("p" + (compuestos.size()+1));
+        compuestos.add(new Cuadrado(compuestos.size(),entity));
+
 
         renderSystme.markDirty();
     }
