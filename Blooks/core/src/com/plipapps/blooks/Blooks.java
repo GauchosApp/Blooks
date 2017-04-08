@@ -5,7 +5,9 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.utils.Logger;
 import com.kotcrab.vis.runtime.RuntimeContext;
 import com.kotcrab.vis.runtime.data.SceneData;
@@ -19,10 +21,7 @@ import com.kotcrab.vis.runtime.util.SpriterData;
 import com.plipapps.blooks.manager.GameSceneManager;
 import com.plipapps.blooks.manager.LevelSceneManager;
 import com.plipapps.blooks.manager.MenuSceneManager;
-import com.plipapps.blooks.system.LockSpawnerSystem;
-import com.plipapps.blooks.system.SpriteBoundsCreator;
-import com.plipapps.blooks.system.SpriteBoundsUpdater;
-import com.plipapps.blooks.system.SquareMergeSystem;
+import com.plipapps.blooks.system.*;
 import com.plipapps.blooks.util.Holder;
 
 public class Blooks extends ApplicationAdapter {
@@ -31,12 +30,16 @@ public class Blooks extends ApplicationAdapter {
 	SoundController soundController;
 	String scenePath;
 	Scene scene;
+	private TextureAtlas clickAtlas;
+	private Animation animation;
+	private Float timePassed = 0f;
 	private GameSceneManager gameScene;
 
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-
+	//	clickAtlas = new TextureAtlas(Gdx.files.internal("click.atlas"));
+	//	animation = new Animation(1/30f, clickAtlas.getRegions());
 		//VisAssetManager is a extension of standard LibGDX AssetManager,
 		//it makes loading scene easier
 		manager = new VisAssetManager(batch);
@@ -95,6 +98,7 @@ public class Blooks extends ApplicationAdapter {
 		unloadPreviousScene();
 
 		final Holder<SquareMergeSystem> spawnerSystem = Holder.empty();
+		final Holder<AnimationSelectedSystem> spawnerSystem2 = Holder.empty();
 
 		SceneLoader.SceneParameter parameter = new SceneLoader.SceneParameter();
 		parameter.config.addSystem(SpriteBoundsCreator.class);
@@ -112,8 +116,16 @@ public class Blooks extends ApplicationAdapter {
 				return spawnerSystem.value;
 			}
 		});
+		parameter.config.addSystem(new SystemProvider() {
+			@Override
+			public BaseSystem create (EntityEngineConfiguration config, RuntimeContext context, SceneData data) {
+				spawnerSystem2.value = new AnimationSelectedSystem();
+				return spawnerSystem2.value;
+			}
+		});
 
 		//manager.load("spriter/Animacion/Animacion.scml", SpriterData.class);
+	//	manager.load("click.atlas", com.kotcrab.vis.runtime.spriter.Animation.class);
 		scenePath = "scene/game1080.scene";
 		scene = manager.loadSceneNow(scenePath, parameter);
 	}

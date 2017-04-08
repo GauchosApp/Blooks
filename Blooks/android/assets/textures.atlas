@@ -4,6 +4,13 @@ size: 2048,2048
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
+animacion/click_000
+  rotate: false
+  xy: 1084, 1398
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: -1
 gfx/1
   rotate: false
   xy: 1753, 1822
@@ -13,112 +20,91 @@ gfx/1
   index: -1
 gfx/2
   rotate: false
-  xy: 1700, 1604
+  xy: 1700, 101
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/3
   rotate: false
-  xy: 1788, 1390
+  xy: 1788, 1243
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/4
   rotate: false
-  xy: 1788, 1176
+  xy: 1788, 1029
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/5
   rotate: false
-  xy: 1788, 962
+  xy: 1788, 815
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/6
   rotate: false
-  xy: 1788, 748
+  xy: 1788, 601
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/7
   rotate: false
-  xy: 1788, 534
-  size: 212, 212
-  orig: 212, 212
-  offset: 0, 0
-  index: -1
-gfx/8
-  rotate: false
-  xy: 1788, 320
-  size: 212, 212
-  orig: 212, 212
-  offset: 0, 0
-  index: -1
-gfx/9
-  rotate: false
-  xy: 1788, 106
+  xy: 1788, 387
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/Cuadrado 1
   rotate: false
-  xy: 1084, 1153
+  xy: 1084, 1037
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 2
   rotate: false
-  xy: 1084, 792
+  xy: 1084, 676
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 3
   rotate: false
-  xy: 1084, 431
+  xy: 1084, 315
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 4
   rotate: false
-  xy: 1084, 70
+  xy: 1497, 1457
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 5
   rotate: false
-  xy: 1436, 1153
+  xy: 1436, 1037
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 6
   rotate: false
-  xy: 1436, 792
+  xy: 1436, 676
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 7
   rotate: false
-  xy: 1436, 431
-  size: 350, 359
-  orig: 350, 359
-  offset: 0, 0
-  index: -1
-gfx/Cuadrado 8
-  rotate: false
-  xy: 1436, 70
+  xy: 1436, 315
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
@@ -132,7 +118,7 @@ gfx/SnR1Mdp
   index: -1
 gfx/back
   rotate: false
-  xy: 478, 32
+  xy: 1700, 19
   size: 112, 80
   orig: 112, 80
   offset: 0, 0
@@ -146,21 +132,21 @@ gfx/background
   index: -1
 gfx/botonplay
   rotate: false
-  xy: 1084, 1666
+  xy: 1084, 163
   size: 614, 150
   orig: 614, 150
   offset: 0, 0
   index: -1
 gfx/botonremove
   rotate: false
-  xy: 1084, 1514
+  xy: 1084, 11
   size: 614, 150
   orig: 614, 150
   offset: 0, 0
   index: -1
 gfx/rate
   rotate: false
-  xy: 1914, 1691
+  xy: 1849, 1691
   size: 129, 129
   orig: 129, 129
   offset: 0, 0
@@ -174,7 +160,7 @@ gfx/restart
   index: -1
 gfx/share
   rotate: false
-  xy: 262, 11
+  xy: 1849, 1588
   size: 104, 101
   orig: 104, 101
   offset: 0, 0
@@ -195,7 +181,7 @@ gfx/soundon
   index: -1
 gfx/undo
   rotate: false
-  xy: 368, 18
+  xy: 262, 18
   size: 108, 94
   orig: 108, 94
   offset: 0, 0
@@ -311,83 +297,104 @@ gfx/nivel 9
   index: -1
 
 textures5.png
-size: 2048,512
+size: 2048,1024
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
 gfx/10
   rotate: false
-  xy: 706, 149
+  xy: 920, 644
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/11
   rotate: false
-  xy: 920, 149
+  xy: 354, 69
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/12
   rotate: false
-  xy: 1134, 292
+  xy: 706, 430
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/13
   rotate: false
-  xy: 1348, 292
+  xy: 920, 430
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/14
   rotate: false
-  xy: 1562, 292
+  xy: 568, 216
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/15
   rotate: false
-  xy: 1776, 292
+  xy: 782, 216
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/16
   rotate: false
-  xy: 1134, 78
+  xy: 568, 2
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/8
+  rotate: false
+  xy: 354, 283
+  size: 212, 212
+  orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/9
+  rotate: false
+  xy: 706, 644
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/Cuadrado 10
   rotate: false
-  xy: 354, 2
+  xy: 354, 497
+  size: 350, 359
+  orig: 350, 359
+  offset: 0, 0
+  index: -1
+gfx/Cuadrado 8
+  rotate: false
+  xy: 2, 497
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 9
   rotate: false
-  xy: 2, 2
+  xy: 2, 136
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/banner
   rotate: false
-  xy: 2, 363
+  xy: 2, 858
   size: 1080, 141
   orig: 1080, 141
   offset: 0, 0
   index: -1
 gfx/candado
   rotate: false
-  xy: 1348, 78
+  xy: 782, 2
   size: 212, 212
   orig: 212, 212
   offset: 0, 0

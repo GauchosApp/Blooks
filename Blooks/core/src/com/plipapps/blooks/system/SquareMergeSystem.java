@@ -37,6 +37,8 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
     VisIDManager idManager;
     ArrayList<VisSprite> mergeTemplate;
     private VisAssetManager mVisAssetManager;
+    private Entity animacion;
+    private Transform animacionTransform;
 
     public SquareMergeSystem () {
         super(Aspect.all(VisSprite.class, Merge.class));
@@ -46,6 +48,8 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
         cuadrados = new ArrayList<Cuadrado>();
         posibilidades = new ArrayList<Cuadrado>();
         mergeTemplate = new ArrayList<VisSprite>();
+        animacion = idManager.get("click0");
+        animacionTransform = transformCm.get(animacion);
         for (int i = 1; i <= 7; i++){
             if (i <= 4) {
                 cuadrados.add(new Cuadrado(i, idManager.get("c" + i)));
@@ -66,6 +70,11 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
                 if(!touch1 && posicion == -1) {
                     System.out.println("posicion");
                    // setAnimacion(cuadrados.get(i).getEntity());
+
+                    Transform transform2 = transformCm.get(cuadrados.get(i).getEntity());
+                    float x =transform2.getX()-0.3f;
+                    float y=transform2.getY()-0.3f;
+                    animacionTransform .setPosition(x,y);
                     posicion = i;
                     touch1 = true;
                 }else if (!touch2 && posicion != i){
@@ -98,8 +107,21 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
                         touch1 = false;
                         touch2 = false;
                         posicion = -1;
+                        variables.get(animacion).putInt("selected",0);
+                        animacionTransform.setPosition(12f,7f);
                         break;
                 }
+            }
+        }
+        if(variables.get(animacion).getInt("selected") == 0){
+            if (animacionTransform.getX() < 12f){
+                animacionTransform.setPosition(12f,7f);
+                for (Cuadrado c : cuadrados){
+                    variables.get(c.getEntity()).putInt("selected", 0);
+                }
+                posicion = -1;
+                touch1 = false;
+                touch2 = false;
             }
         }
 
@@ -108,7 +130,7 @@ public class SquareMergeSystem extends EntityProcessingSystem implements AfterSc
         Transform transform2 = transformCm.get(entity2);
         Transform platformTransform = new Transform();
 
-      EntityEdit e =  world.createEntity().edit()
+      world.createEntity().edit()
                 .add(new Renderable(10))
                 .add(new Layer(targetLayerId))
                 .add(new VisSprite(mergeTemplate.get(i)))

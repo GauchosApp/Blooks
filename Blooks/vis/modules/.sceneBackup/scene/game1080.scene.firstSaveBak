@@ -966,7 +966,7 @@
           "y": 11.8821,
           "scaleX": 1.0,
           "scaleY": 1.0,
-          "rotation": 270.0,
+          "rotation": -90.0,
           "@class": "Transform"
         },
         {
@@ -1029,7 +1029,7 @@
             },
             {
               "key": "rotation",
-              "value": "270",
+              "value": "-90",
               "@class-key": "String",
               "@class-value": "String"
             }

@@ -21,7 +21,8 @@ public class GameSceneManager extends BaseSceneManager {
     private int nivel;
     private com.plipapps.blooks.SoundController soundController;
     private Entity soundOnEntity, soundOffEntity;
-
+    private boolean isCuadrado;
+    private Entity animacion;
     public GameSceneManager(Blooks game, int nivel) {
         super(game);
         this.nivel = nivel;
@@ -35,7 +36,7 @@ public class GameSceneManager extends BaseSceneManager {
            for (int i = 1; i <= 4; i++){
             getCuadrados().add(new Cuadrado(i, getSpriteBounds("c"+i), idManager.get("c"+i)));
         }
-
+        animacion = idManager.get("click0");
         back = getSpriteBounds("back");
         undo = getSpriteBounds("undo");
         restart = getSpriteBounds("restart");
@@ -43,6 +44,7 @@ public class GameSceneManager extends BaseSceneManager {
         soundOnEntity = idManager.get("soundOn");
         soundOffEntity = idManager.get("soundOff");
         rate = getSpriteBounds("rate");
+        isCuadrado = false;
         if (!soundController.isEnabled()){
             swapSpritesPosition(soundOnEntity, soundOffEntity);
         }
@@ -64,8 +66,15 @@ public class GameSceneManager extends BaseSceneManager {
                     getCuadrados().get(i).setSeleccionado(true);
                     // sprite = spriteCm.get(cuadrados.get(i).getEntity());
                     variables.get(cuadrados.get(i).getEntity()).putInt("selected", 1);
+                    isCuadrado = true;
                 }
             }
+        }
+        if (!isCuadrado){
+            variables.get(animacion).putInt("selected", 0);
+        }else {
+            variables.get(animacion).putInt("selected",1);
+            isCuadrado = false;
         }
         if (back.contains(x, y)){
             game.loadLevelScene();
