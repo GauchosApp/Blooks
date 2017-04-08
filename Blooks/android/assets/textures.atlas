@@ -194,28 +194,28 @@ filter: Nearest,Nearest
 repeat: none
 gfx/nivel 1
   rotate: false
-  xy: 2, 1004
+  xy: 2, 2
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
 gfx/nivel 2
   rotate: false
-  xy: 2, 2
+  xy: 1004, 1004
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
 gfx/nivel 3
   rotate: false
-  xy: 1004, 1004
+  xy: 1004, 2
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
-gfx/nivel 4
+gfx/nivel1
   rotate: false
-  xy: 1004, 2
+  xy: 2, 1004
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
@@ -226,35 +226,35 @@ size: 2048,2048
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
+gfx/nivel 4
+  rotate: false
+  xy: 2, 1004
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
 gfx/nivel 5
-  rotate: false
-  xy: 2, 1004
-  size: 1000, 1000
-  orig: 1000, 1000
-  offset: 0, 0
-  index: -1
-gfx/nivel 13
-  rotate: false
-  xy: 2, 1004
-  size: 1000, 1000
-  orig: 1000, 1000
-  offset: 0, 0
-  index: -1
-gfx/nivel 6
   rotate: false
   xy: 2, 2
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
-gfx/nivel 7
+gfx/nivel 13
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+gfx/nivel 6
   rotate: false
   xy: 1004, 1004
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
-gfx/nivel 8
+gfx/nivel 7
   rotate: false
   xy: 1004, 2
   size: 1000, 1000
@@ -269,133 +269,140 @@ filter: Nearest,Nearest
 repeat: none
 gfx/nivel 10
   rotate: false
-  xy: 2, 2
+  xy: 1004, 1004
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
 gfx/nivel 11
   rotate: false
-  xy: 1004, 1004
-  size: 1000, 1000
-  orig: 1000, 1000
-  offset: 0, 0
-  index: -1
-gfx/nivel 12
-  rotate: false
   xy: 1004, 2
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
-gfx/nivel 9
+gfx/nivel 8
   rotate: false
   xy: 2, 1004
   size: 1000, 1000
   orig: 1000, 1000
   offset: 0, 0
   index: -1
+gfx/nivel 9
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
 
 textures5.png
-size: 2048,1024
+size: 2048,2048
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
 gfx/10
   rotate: false
-  xy: 920, 644
+  xy: 1356, 1655
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/11
   rotate: false
-  xy: 354, 69
+  xy: 354, 296
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/12
   rotate: false
-  xy: 706, 430
+  xy: 568, 510
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/13
   rotate: false
-  xy: 920, 430
+  xy: 1004, 1080
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/14
   rotate: false
-  xy: 568, 216
+  xy: 1570, 1655
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/15
   rotate: false
-  xy: 782, 216
+  xy: 354, 82
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/16
   rotate: false
-  xy: 568, 2
+  xy: 568, 296
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/8
   rotate: false
-  xy: 354, 283
+  xy: 354, 510
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/9
   rotate: false
-  xy: 706, 644
+  xy: 1004, 1294
   size: 212, 212
   orig: 212, 212
   offset: 0, 0
   index: -1
 gfx/Cuadrado 10
   rotate: false
-  xy: 354, 497
+  xy: 2, 2
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 8
   rotate: false
-  xy: 2, 497
+  xy: 2, 363
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/Cuadrado 9
   rotate: false
-  xy: 2, 136
+  xy: 1004, 1508
   size: 350, 359
   orig: 350, 359
   offset: 0, 0
   index: -1
 gfx/banner
   rotate: false
-  xy: 2, 858
+  xy: 2, 724
   size: 1080, 141
   orig: 1080, 141
   offset: 0, 0
   index: -1
 gfx/candado
   rotate: false
-  xy: 782, 2
+  xy: 782, 510
   size: 212, 212
   orig: 212, 212
+  offset: 0, 0
+  index: -1
+gfx/nivel 12
+  rotate: false
+  xy: 2, 867
+  size: 1000, 1000
+  orig: 1000, 1000
   offset: 0, 0
   index: -1

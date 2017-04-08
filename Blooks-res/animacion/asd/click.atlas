@@ -1,0 +1,191 @@
+
+click.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+click
+  rotate: false
+  xy: 1, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 0
+click
+  rotate: false
+  xy: 1, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 1
+click
+  rotate: false
+  xy: 414, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 2
+click
+  rotate: false
+  xy: 414, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 3
+
+click2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+click
+  rotate: false
+  xy: 1, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 4
+click
+  rotate: false
+  xy: 1, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 5
+click
+  rotate: false
+  xy: 414, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 6
+click
+  rotate: false
+  xy: 414, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 7
+
+click3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+click
+  rotate: false
+  xy: 1, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 8
+click
+  rotate: false
+  xy: 1, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 9
+click
+  rotate: false
+  xy: 414, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 10
+click
+  rotate: false
+  xy: 414, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 11
+
+click4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+click
+  rotate: false
+  xy: 1, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 12
+click
+  rotate: false
+  xy: 1, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 13
+click
+  rotate: false
+  xy: 414, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 14
+click
+  rotate: false
+  xy: 414, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 15
+
+click5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+click
+  rotate: false
+  xy: 1, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 16
+click
+  rotate: false
+  xy: 1, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 17
+click
+  rotate: false
+  xy: 414, 421
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 18
+click
+  rotate: false
+  xy: 414, 1
+  size: 411, 418
+  orig: 411, 418
+  offset: 0, 0
+  index: 19
+
+click6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+test-me!/input/test02 (non POT)
+  rotate: false
+  xy: 1, 1
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+test-me!/input/test01
+  rotate: false
+  xy: 303, 45
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+test-me!/input/test03 (multi shapes)
+  rotate: false
+  xy: 561, 45
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
